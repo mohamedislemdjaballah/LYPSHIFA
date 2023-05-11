@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clearbackground"
+    tools:context=".add_result">
+
+    <LinearLayout
+        android:id="@+id/userChoice_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_view"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <Button
+            android:id="@+id/forMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectange_button"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="@string/forMe" />
+
+        <Button
+            android:id="@+id/forOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectange_button"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="@string/forOther" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="54dp" />
+
+    <TextView
+        android:id="@+id/fillTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="105dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:paddingEnd="20dp"
+        android:text="@string/fillAllInfo"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/ageGenderRCompat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/ageGenderRCompat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ageGenderRCompat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fillTextId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="22dp">
+
+            <EditText
+                android:id="@+id/ageResetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/ageReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spinner"
+                android:contentDescription="@string/age"
+                android:contextClickable="false"
+                android:minHeight="48dp"
+                android:popupBackground="@drawable/spinner"
+                android:tooltipText="@string/age" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/genderResetCompat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/genderTextReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/genderReset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/blue"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center|end"
+                    android:hint="@string/male"
+                    android:paddingEnd="10dp"
+                    android:text="@string/male"
+                    android:textColorHint="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/femaleReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/pink"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:hint="@string/female"
+                    android:paddingEnd="10dp"
+                    android:text="@string/female"
+                    android:textColorHint="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/doneReseting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/slbutton"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="done"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageGenderRCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

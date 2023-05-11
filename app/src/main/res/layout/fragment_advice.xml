@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clearbackground"
+    tools:context=".ui.advice.AdviceFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+
+            android:id="@+id/seachTxt"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:drawableEnd="@drawable/baseline_search_24"
+            android:fontFamily="@font/poppins_mediumitalic"
+            android:hint="@string/search"
+            android:inputType="textAutoComplete"
+            android:padding="1dp"
+            android:paddingStart="13dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_Grey"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/notification"
+            android:padding="8dp"
+            android:src="@drawable/baseline_notifications_none_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/setting"
+            android:padding="8dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/setting_none"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="745dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_1" />
+
+            <Button
+                android:id="@+id/appendExam"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_3" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_4" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_5" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_6" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_7" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_8" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Advice_9" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

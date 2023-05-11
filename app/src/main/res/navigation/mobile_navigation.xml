@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.shifa.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_Pills"
+        android:name="com.example.shifa.ui.description.DescriptionFragment"
+        android:label="@string/title_des"
+        tools:layout="@layout/fragment_description" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.shifa.ui.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_advice"
+        android:name="com.example.shifa.ui.advice.AdviceFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_advice" />
+    <fragment
+        android:id="@+id/navigation_des"
+        android:name="com.example.shifa.ui.description.DescriptionFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_description" />
+
+</navigation>
